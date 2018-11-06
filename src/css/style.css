@@ -6398,7 +6398,11 @@ body {
     margin-left: 0px; }
     .main .main__menu .menu__list {
       margin-left: 0px;
-      padding-left: 0px; }
+      padding-left: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 250px;
+      justify-content: center; }
       .main .main__menu .menu__list .menu__item {
         display: flex;
         align-items: center;
@@ -6409,6 +6413,7 @@ body {
         text-transform: uppercase;
         width: 105px;
         height: 50px;
+        margin: 20px 5px;
         background: linear-gradient(to left, #eb3349, #f45c43);
         margin-bottom: 10px; }
 
@@ -6645,6 +6650,26 @@ body {
     width: 150px;
     height: 100px;
     font-size: 30px; } }
+
+@media screen and (max-width: 600px) {
+  .dice {
+    width: 75px;
+    height: 75px; }
+  .main .main__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px; }
+    .main .main__menu .menu__headline {
+      width: 100%; }
+    .main .main__menu .menu__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .main .main__menu .menu__list .menu__item {
+        margin: 12px 5px; } }
 
 .hidden {
   display: none !important; }

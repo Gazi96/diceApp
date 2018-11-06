@@ -3,7 +3,7 @@ var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var deploy = require('gulp-gh-pages');
 var mode = require('gulp-mode')();
-/*var uglify = require('gulp-uglify');*/
+var uglify = require('gulp-uglify');
 /**
  * Push build to gh-pages
  */
